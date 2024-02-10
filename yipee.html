@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yipee!</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Set body background color and font family */
+      body {
+        background-color: pink;
+        font-family: "Press Start 2P", monospace; /* Change the font family */
+      }
+
+      /* Center the content horizontally */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      /* Style for the countdown */
+      .countdown {
+        text-align: center; /* Center the countdown horizontally */
+        margin-bottom: 20px; /* Add space between countdown and image */
+      }
+
+      /* Style for each box */
+      .box {
+        text-align: center; /* Center the text horizontally */
+        margin: 0 10px; /* Add some margin between boxes */
+      }
+
+      /* Style for the numbers */
+      .num {
+        font-size: 24px; /* Increase font size */
+        font-weight: 600; /* Increase font weight */
+      }
+
+      /* Style for the text */
+      .text {
+        font-size: 24px; /* Adjust font size for text */
+        font-weight: 600; /* Adjust font weight for text */
+        margin-top: 5px; /* Add some space between number and text */
+      }
+
+      img {
+        display: block;
+        margin-top: 20px; /* Adjust the top margin */
+        border-radius: 10px; /* Adjust the radius value to your preference */
+      }
+      .flower1 {
+        position: absolute;
+        bottom: 0; /* Position the image at the bottom of the viewport */
+        transform: translateX(-26%); /* Center the image horizontally */
+        left: 16.5%;
+      }
+      .flower2 {
+        position: absolute;
+        bottom: 0; /* Position the image at the bottom of the viewport */
+        transform: translateX(-26%); /* Center the image horizontally */
+        left: 75%;
+      }
+      .audio {
+        margin: 10px;
+        border: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="countdown">
+        <div class="box">
+          <span class="num" id="day-box">00</span>
+          <span class="text">Days</span>
+        </div>
+        <div class="box">
+          <span class="num" id="hr-box">00</span>
+          <span class="text">Hours</span>
+        </div>
+        <div class="box">
+          <span class="num" id="min-box">00</span>
+          <span class="text">Minutes</span>
+        </div>
+        <div class="box">
+          <span class="num" id="sec-box">00</span>
+          <span class="text">Seconds...</span>
+        </div>
+      </div>
+      <img src="james_jenni.jpg" alt="" />
+      <audio controls src="lana.mp3" class="audio"></audio>
+    </div>
+    <!-- Script -->
+    <script src="javascript.js"></script>
+    <img src="flower1.png" alt="" class="flower1" />
+    <img src="flower2.png" alt="" class="flower2" />
+  </body>
+</html>
