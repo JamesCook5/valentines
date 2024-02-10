@@ -6,7 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine...</title>
     <style>
       /* Center the container horizontally and vertically */
@@ -35,7 +34,6 @@
       }
       .sign3-link {
         position: absolute;
-
         top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -43,7 +41,6 @@
 
       .sign4-link {
         position: absolute;
-
         top: 18.7%;
         left: 49.2%;
         transform: translate(-50%, -50%);
@@ -51,14 +48,12 @@
 
       .sign5-link {
         position: absolute;
-
         top: 9.7%;
         left: 49.2%;
         transform: translate(-50%, -50%);
       }
       .sign6-link {
         position: absolute;
-
         top: 2.7%;
         left: 49.2%;
         transform: translate(-50%, -50%);
@@ -75,6 +70,58 @@
       .cloud-image {
         width: 150px; /* Adjust the width as needed */
         height: auto; /* Maintain aspect ratio */
+      }
+
+      /* Adjustments for mobile devices */
+      @media only screen and (max-width: 600px) {
+        .background-image {
+          /* Adjust the background image size */
+          width: 100%;
+          height: auto;
+        }
+
+        .cloud-image {
+          /* Adjust the cloud image size */
+          width: 15%; /* Adjust as needed */
+          height: auto;
+        }
+
+        /* Adjust positions of cloud and sign images */
+        .cloud-link {
+          top: 80%;
+          left: 30%;
+          transform: translate(-50%, -50%);
+        }
+
+        .cloud-link:nth-child(2) {
+          top: 80%;
+          left: 70%;
+          transform: translate(-50%, -50%);
+        }
+
+        .sign3-link {
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .sign4-link {
+          top: 25%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .sign5-link {
+          top: 15%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .sign6-link {
+          top: 8%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     </style>
   </head>
