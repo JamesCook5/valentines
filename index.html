@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine...</title>
     <style>
       /* Center the container horizontally and vertically */
@@ -32,38 +33,35 @@
         left: 40%;
         transform: translate(-50%, -50%);
       }
-      .sign3-link,
-      .sign4-link,
-      .sign5-link,
-      .sign6-link {
+      .sign3-link {
         position: absolute;
-        top: auto;
+
+        top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
 
-      .sign3-link {
-        bottom: 80%;
-        width: 15%; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
-      }
-
       .sign4-link {
-        bottom: 60%;
-        width: 15%; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
+        position: absolute;
+
+        top: 18.7%;
+        left: 49.2%;
+        transform: translate(-50%, -50%);
       }
 
       .sign5-link {
-        bottom: 50%;
-        width: 15%; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
-      }
+        position: absolute;
 
+        top: 9.7%;
+        left: 49.2%;
+        transform: translate(-50%, -50%);
+      }
       .sign6-link {
-        bottom: 40%;
-        width: 15%; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
+        position: absolute;
+
+        top: 2.7%;
+        left: 49.2%;
+        transform: translate(-50%, -50%);
       }
 
       /* Additional cloud image */
@@ -77,35 +75,6 @@
       .cloud-image {
         width: 150px; /* Adjust the width as needed */
         height: auto; /* Maintain aspect ratio */
-      }
-
-      /* Adjustments for mobile devices */
-      @media only screen and (max-width: 600px) {
-        .cloud-link {
-          top: 80%;
-          left: 30%;
-        }
-
-        .cloud-link:nth-child(2) {
-          top: 80%;
-          left: 70%;
-        }
-
-        .sign3-link {
-          bottom: 25%;
-        }
-
-        .sign4-link {
-          bottom: 15%;
-        }
-
-        .sign5-link {
-          bottom: 10%;
-        }
-
-        .sign6-link {
-          bottom: 5%;
-        }
       }
     </style>
   </head>
