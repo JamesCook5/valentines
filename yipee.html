@@ -74,6 +74,14 @@
         margin: 10px;
         border: 10px;
       }
+
+      /* Media query for vertical orientation */
+      @media only screen and (max-device-width: 480px) and (orientation: portrait) {
+        .flower1,
+        .flower2 {
+          display: none; /* Hide the flowers for vertical mobile devices */
+        }
+      }
     </style>
   </head>
   <body>
