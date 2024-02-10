@@ -33,32 +33,29 @@
       transform: translate(-50%, -50%);
     }
 
-    .sign3-link {
+    .sign3-link,
+    .sign4-link,
+    .sign5-link,
+    .sign6-link {
       position: absolute;
-      top: 38%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
+    }
+
+    .sign3-link {
+      top: 38%;
     }
 
     .sign4-link {
-      position: absolute;
       top: 18.7%;
-      left: 49.2%;
-      transform: translate(-50%, -50%);
     }
 
     .sign5-link {
-      position: absolute;
       top: 9.7%;
-      left: 49.2%;
-      transform: translate(-50%, -50%);
     }
 
     .sign6-link {
-      position: absolute;
       top: 2.7%;
-      left: 49.2%;
-      transform: translate(-50%, -50%);
     }
 
     /* Additional cloud image */
@@ -74,10 +71,17 @@
       height: auto; /* Maintain aspect ratio */
     }
 
-    /* Media query for adjusting cloud image size on mobile devices in landscape orientation */
-    @media only screen and (max-width: 600px) and (orientation: landscape) {
-      .cloud-image {
-        width: 75px; /* Reduce the width for mobile devices in landscape orientation */
+    /* Media query for adjusting cloud image and sign size on mobile devices */
+    @media only screen and (max-width: 800px) {
+      .cloud-link .cloud-image {
+        width: 75px; /* Reduce the width for mobile devices */
+      }
+
+      .sign3-link,
+      .sign4-link,
+      .sign5-link,
+      .sign6-link {
+        font-size: 12px; /* Adjust font size for signs on mobile devices */
       }
     }
   </style>
@@ -101,3 +105,4 @@
   </div>
 </body>
 </html>
+
