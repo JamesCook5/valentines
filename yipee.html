@@ -19,6 +19,7 @@
 
       /* Center the content horizontally */
       .container {
+        position: relative; /* Add relative positioning to make it a reference for absolute positioning */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -56,18 +57,19 @@
         margin-top: 20px; /* Adjust the top margin */
         border-radius: 10px; /* Adjust the radius value to your preference */
       }
+
       .flower1 {
         position: absolute;
         bottom: 0; /* Position the image at the bottom of the viewport */
-        transform: translateX(-26%); /* Center the image horizontally */
-        left: 16.5%;
+        left: 0; /* Position the image at the left side */
       }
+
       .flower2 {
         position: absolute;
         bottom: 0; /* Position the image at the bottom of the viewport */
-        transform: translateX(-26%); /* Center the image horizontally */
-        left: 75%;
+        right: 0; /* Position the image at the right side */
       }
+
       .audio {
         margin: 10px;
         border: 10px;
@@ -96,10 +98,11 @@
       </div>
       <img src="james_jenni.jpg" alt="" />
       <audio controls src="lana.mp3" class="audio"></audio>
+      <!-- Add flower images inside the container -->
+      <img src="flower1.png" alt="" class="flower1" />
+      <img src="flower2.png" alt="" class="flower2" />
     </div>
     <!-- Script -->
     <script src="javascript.js"></script>
-    <img src="flower1.png" alt="" class="flower1" />
-    <img src="flower2.png" alt="" class="flower2" />
   </body>
 </html>
