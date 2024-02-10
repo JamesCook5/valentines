@@ -32,30 +32,32 @@
       left: 40%;
       transform: translate(-50%, -50%);
     }
-
-    .sign3-link,
-    .sign4-link,
-    .sign5-link,
-    .sign6-link {
+    
+    .sign3-link {
       position: absolute;
-      left: 50%;
+      bottom: 0; /* Position the sign at the bottom of the container */
+      left: 50%; /* Center the sign horizontally */
       transform: translateX(-50%);
     }
 
-    .sign3-link {
-      top: 38%;
-    }
-
     .sign4-link {
+      position: absolute;
       top: 18.7%;
+      left: 49.2%;
+      transform: translate(-50%, -50%);
     }
 
     .sign5-link {
+      position: absolute;
       top: 9.7%;
+      left: 49.2%;
+      transform: translate(-50%, -50%);
     }
-
     .sign6-link {
+      position: absolute;
       top: 2.7%;
+      left: 49.2%;
+      transform: translate(-50%, -50%);
     }
 
     /* Additional cloud image */
@@ -74,7 +76,7 @@
     /* Media query for adjusting cloud image and sign size on mobile devices */
     @media only screen and (max-width: 800px) {
       .cloud-link .cloud-image {
-        width: 75px; /* Reduce the width for mobile devices */
+        width: 100px; /* Reduce the width for mobile devices */
       }
 
       .sign3-link,
